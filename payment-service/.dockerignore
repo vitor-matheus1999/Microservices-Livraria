@@ -1,0 +1,23 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__
+*.py[cod]
+*.pyo
+.venv
+venv
+*.egg-info
+dist
+build
+.mypy_cache
+.pytest_cache
+.ruff_cache
+
+# Environment
+.env
+
+# Docs / misc
+README.md
+*.md

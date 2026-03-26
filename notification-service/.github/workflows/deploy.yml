@@ -1,0 +1,69 @@
+name: Deploy payment-result-consumer
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .env
+        run: |
+          if [ ! -f .env ]; then
+            cp .env.example .env
+          fi
+        shell: bash
+
+      - name: Stop containers
+        run: docker compose down --remove-orphans
+        continue-on-error: true
+
+      - name: Prune images
+        run: docker image prune -f
+        continue-on-error: true
+
+      - name: Build and start
+        run: docker compose up -d --build
+
+      - name: Wait for services
+        run: sleep 10
+        shell: bash
+
+      - name: Check containers
+        run: docker ps
+
+      - name: Show logs on failure
+        if: failure()
+        run: docker compose logs --tail=50
+
+      - name: Health check (worker)
+        run: |
+          max_attempts=30
+          attempt=0
+          while [ $attempt -lt $max_attempts ]; do
+            running=$(docker inspect -f '{{.State.Running}}' payment-result-consumer 2>/dev/null || echo "false")
+            restarting=$(docker inspect -f '{{.State.Restarting}}' payment-result-consumer 2>/dev/null || echo "false")
+
+            if [ "$running" = "true" ] && [ "$restarting" = "false" ]; then
+              recent_logs=$(docker logs --tail 50 payment-result-consumer 2>&1 || true)
+              if echo "$recent_logs" | grep -Eqi "fatal|uncaught|erro ao iniciar aplicacao"; then
+                echo "Container em execucao, mas logs indicam falha critica de inicializacao"
+                echo "$recent_logs"
+                exit 1
+              fi
+              exit 0
+            fi
+
+            attempt=$((attempt + 1))
+            sleep 2
+          done
+
+          echo "Container nao ficou saudavel dentro do tempo esperado"
+          docker compose logs app
+          exit 1
+        shell: bash

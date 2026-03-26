@@ -1,0 +1,62 @@
+  services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: ms-pedidos-postgres
+
+    environment:
+      POSTGRES_USER: ${DB_USERNAME:-postgres}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-postgres}
+      POSTGRES_DB: ${DB_DATABASE:-ms_pedidos}
+
+    ports:
+      - '${DB_PORT:-5433}:5432'
+
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U ${DB_USERNAME:-postgres} -d ${DB_DATABASE:-ms_pedidos}']
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+    networks:
+      - shared-network
+
+    restart: unless-stopped
+
+
+  ms-pedidos:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: ms-pedidos
+    ports:
+      - '${PORT:-3002}:3000'
+
+    environment:
+      NODE_ENV: development
+      PORT: 3000
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_USERNAME: ${DB_USERNAME:-postgres}
+      DB_PASSWORD: ${DB_PASSWORD:-postgres}
+      DB_DATABASE: ${DB_DATABASE:-ms_pedidos}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - shared-network
+
+    restart: unless-stopped
+    pull_policy: always
+volumes:
+  postgres_data:
+    name: ms-pedidos-postgres-data
+
+networks:
+  shared-network:
+    name: microservices-network
+    driver: bridge

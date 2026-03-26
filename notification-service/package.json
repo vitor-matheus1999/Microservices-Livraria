@@ -1,0 +1,18 @@
+{
+  "name": "payment-result-consumer",
+  "version": "1.0.0",
+  "description": "Microservico Node.js para consumo de resultados de pagamento via RabbitMQ",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.4",
+    "dotenv": "^16.4.5",
+    "pino": "^9.3.2"
+  }
+}

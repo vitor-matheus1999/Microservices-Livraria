@@ -1,0 +1,16 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: payment-result-consumer
+    env_file:
+      - .env
+    restart: unless-stopped
+    networks:
+      - shared-network
+
+networks:
+  shared-network:
+    name: microservices-network
+    driver: bridge

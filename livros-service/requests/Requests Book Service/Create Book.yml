@@ -1,0 +1,25 @@
+info:
+  name: Create Book
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{url}}/book"
+  body:
+    type: json
+    data: |-
+      {
+        "title":"Ordem Paranormal RPG",
+        "author":4,
+        "isbn":"978-6588634134",
+        "genres":[1,2],
+        "pages":320
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

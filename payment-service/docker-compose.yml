@@ -1,0 +1,38 @@
+services:
+  # ── RabbitMQ broker ─────────────────────────────────────────────────────
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    networks:
+      - shared-network
+    ports:
+      - "5672:5672"    # AMQP
+      - "15672:15672"  # Management UI  →  http://localhost:15672
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  # ── Payment microservice ─────────────────────────────────────────────────
+  payment-service:
+    build: .
+    container_name: payment-service
+    networks:
+      - shared-network
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+    environment:
+      RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672
+      RABBITMQ_EXCHANGE: orders.exchange
+      RABBITMQ_ROUTING_KEY: order.created
+    restart: on-failure
+
+networks:
+  shared-network:
+    name: microservices-network
+    driver: bridge

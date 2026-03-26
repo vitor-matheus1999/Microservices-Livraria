@@ -3,7 +3,7 @@ spring:
     name: identity-service
   # 1. Banco de dados PostgreSQL
   datasource:
-    url: jdbc:postgresql://user-postgres:5432/usuario
+    url: jdbc:postgresql://db-user:5432/usuario
     username: postgres
     password: senha123
     driver-class-name: org.postgresql.Driver

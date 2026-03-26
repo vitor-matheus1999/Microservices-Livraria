@@ -1,0 +1,360 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Trabalho Puc\\customers-service\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{71A3B4AA-8392-4B20-9CCE-1AF549B3A3CA}|customers-service\\customers-service.csproj|d:\\trabalho puc\\customers-service\\customers-service\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{71A3B4AA-8392-4B20-9CCE-1AF549B3A3CA}|customers-service\\customers-service.csproj|solutionrelative:customers-service\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71A3B4AA-8392-4B20-9CCE-1AF549B3A3CA}|customers-service\\customers-service.csproj|d:\\trabalho puc\\customers-service\\customers-service\\infrastructure\\service\\keycloakservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71A3B4AA-8392-4B20-9CCE-1AF549B3A3CA}|customers-service\\customers-service.csproj|solutionrelative:customers-service\\infrastructure\\service\\keycloakservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71A3B4AA-8392-4B20-9CCE-1AF549B3A3CA}|customers-service\\customers-service.csproj|d:\\trabalho puc\\customers-service\\customers-service\\migrations\\20260326210355_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71A3B4AA-8392-4B20-9CCE-1AF549B3A3CA}|customers-service\\customers-service.csproj|solutionrelative:customers-service\\migrations\\20260326210355_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71A3B4AA-8392-4B20-9CCE-1AF549B3A3CA}|customers-service\\customers-service.csproj|d:\\trabalho puc\\customers-service\\customers-service\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71A3B4AA-8392-4B20-9CCE-1AF549B3A3CA}|customers-service\\customers-service.csproj|solutionrelative:customers-service\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71A3B4AA-8392-4B20-9CCE-1AF549B3A3CA}|customers-service\\customers-service.csproj|d:\\trabalho puc\\customers-service\\customers-service\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{71A3B4AA-8392-4B20-9CCE-1AF549B3A3CA}|customers-service\\customers-service.csproj|solutionrelative:customers-service\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71A3B4AA-8392-4B20-9CCE-1AF549B3A3CA}|customers-service\\customers-service.csproj|d:\\trabalho puc\\customers-service\\customers-service\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{71A3B4AA-8392-4B20-9CCE-1AF549B3A3CA}|customers-service\\customers-service.csproj|solutionrelative:customers-service\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71A3B4AA-8392-4B20-9CCE-1AF549B3A3CA}|customers-service\\customers-service.csproj|d:\\trabalho puc\\customers-service\\customers-service\\domain\\interfaces\\ikeycloakservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71A3B4AA-8392-4B20-9CCE-1AF549B3A3CA}|customers-service\\customers-service.csproj|solutionrelative:customers-service\\domain\\interfaces\\ikeycloakservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71A3B4AA-8392-4B20-9CCE-1AF549B3A3CA}|customers-service\\customers-service.csproj|d:\\trabalho puc\\customers-service\\customers-service\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71A3B4AA-8392-4B20-9CCE-1AF549B3A3CA}|customers-service\\customers-service.csproj|solutionrelative:customers-service\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71A3B4AA-8392-4B20-9CCE-1AF549B3A3CA}|customers-service\\customers-service.csproj|d:\\trabalho puc\\customers-service\\customers-service\\application\\dto\\customerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71A3B4AA-8392-4B20-9CCE-1AF549B3A3CA}|customers-service\\customers-service.csproj|solutionrelative:customers-service\\application\\dto\\customerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71A3B4AA-8392-4B20-9CCE-1AF549B3A3CA}|customers-service\\customers-service.csproj|d:\\trabalho puc\\customers-service\\customers-service\\application\\interfaces\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71A3B4AA-8392-4B20-9CCE-1AF549B3A3CA}|customers-service\\customers-service.csproj|solutionrelative:customers-service\\application\\interfaces\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71A3B4AA-8392-4B20-9CCE-1AF549B3A3CA}|customers-service\\customers-service.csproj|d:\\trabalho puc\\customers-service\\customers-service\\application\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71A3B4AA-8392-4B20-9CCE-1AF549B3A3CA}|customers-service\\customers-service.csproj|solutionrelative:customers-service\\application\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71A3B4AA-8392-4B20-9CCE-1AF549B3A3CA}|customers-service\\customers-service.csproj|d:\\trabalho puc\\customers-service\\customers-service\\infrastructure\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71A3B4AA-8392-4B20-9CCE-1AF549B3A3CA}|customers-service\\customers-service.csproj|solutionrelative:customers-service\\infrastructure\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71A3B4AA-8392-4B20-9CCE-1AF549B3A3CA}|customers-service\\customers-service.csproj|d:\\trabalho puc\\customers-service\\customers-service\\domain\\entities\\keycloakuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71A3B4AA-8392-4B20-9CCE-1AF549B3A3CA}|customers-service\\customers-service.csproj|solutionrelative:customers-service\\domain\\entities\\keycloakuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71A3B4AA-8392-4B20-9CCE-1AF549B3A3CA}|customers-service\\customers-service.csproj|d:\\trabalho puc\\customers-service\\customers-service\\domain\\entities\\keycloakcredential.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71A3B4AA-8392-4B20-9CCE-1AF549B3A3CA}|customers-service\\customers-service.csproj|solutionrelative:customers-service\\domain\\entities\\keycloakcredential.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71A3B4AA-8392-4B20-9CCE-1AF549B3A3CA}|customers-service\\customers-service.csproj|d:\\trabalho puc\\customers-service\\customers-service\\domain\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71A3B4AA-8392-4B20-9CCE-1AF549B3A3CA}|customers-service\\customers-service.csproj|solutionrelative:customers-service\\domain\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71A3B4AA-8392-4B20-9CCE-1AF549B3A3CA}|customers-service\\customers-service.csproj|d:\\trabalho puc\\customers-service\\customers-service\\infrastructure\\repository\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71A3B4AA-8392-4B20-9CCE-1AF549B3A3CA}|customers-service\\customers-service.csproj|solutionrelative:customers-service\\infrastructure\\repository\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71A3B4AA-8392-4B20-9CCE-1AF549B3A3CA}|customers-service\\customers-service.csproj|d:\\trabalho puc\\customers-service\\customers-service\\domain\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71A3B4AA-8392-4B20-9CCE-1AF549B3A3CA}|customers-service\\customers-service.csproj|solutionrelative:customers-service\\domain\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71A3B4AA-8392-4B20-9CCE-1AF549B3A3CA}|customers-service\\customers-service.csproj|d:\\trabalho puc\\customers-service\\customers-service\\domain\\interfaces\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71A3B4AA-8392-4B20-9CCE-1AF549B3A3CA}|customers-service\\customers-service.csproj|solutionrelative:customers-service\\domain\\interfaces\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71A3B4AA-8392-4B20-9CCE-1AF549B3A3CA}|customers-service\\customers-service.csproj|d:\\trabalho puc\\customers-service\\customers-service\\infrastructure\\dbcontextcustomers\\dbcontextpostgre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71A3B4AA-8392-4B20-9CCE-1AF549B3A3CA}|customers-service\\customers-service.csproj|solutionrelative:customers-service\\infrastructure\\dbcontextcustomers\\dbcontextpostgre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71A3B4AA-8392-4B20-9CCE-1AF549B3A3CA}|customers-service\\customers-service.csproj|d:\\trabalho puc\\customers-service\\customers-service\\domain\\entities\\keycloakresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71A3B4AA-8392-4B20-9CCE-1AF549B3A3CA}|customers-service\\customers-service.csproj|solutionrelative:customers-service\\domain\\entities\\keycloakresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20260326210355_InitialCreate.cs",
+              "DocumentMoniker": "D:\\Trabalho Puc\\customers-service\\customers-service\\Migrations\\20260326210355_InitialCreate.cs",
+              "RelativeDocumentMoniker": "customers-service\\Migrations\\20260326210355_InitialCreate.cs",
+              "ToolTip": "D:\\Trabalho Puc\\customers-service\\customers-service\\Migrations\\20260326210355_InitialCreate.cs",
+              "RelativeToolTip": "customers-service\\Migrations\\20260326210355_InitialCreate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T21:04:05.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\Trabalho Puc\\customers-service\\customers-service\\Dockerfile",
+              "RelativeDocumentMoniker": "customers-service\\Dockerfile",
+              "ToolTip": "D:\\Trabalho Puc\\customers-service\\customers-service\\Dockerfile",
+              "RelativeToolTip": "customers-service\\Dockerfile",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-03-26T20:49:44.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\Trabalho Puc\\customers-service\\customers-service\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "customers-service\\appsettings.Development.json",
+              "ToolTip": "D:\\Trabalho Puc\\customers-service\\customers-service\\appsettings.Development.json",
+              "RelativeToolTip": "customers-service\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-26T20:43:29.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "KeycloakService.cs",
+              "DocumentMoniker": "D:\\Trabalho Puc\\customers-service\\customers-service\\Infrastructure\\Service\\KeycloakService.cs",
+              "RelativeDocumentMoniker": "customers-service\\Infrastructure\\Service\\KeycloakService.cs",
+              "ToolTip": "D:\\Trabalho Puc\\customers-service\\customers-service\\Infrastructure\\Service\\KeycloakService.cs",
+              "RelativeToolTip": "customers-service\\Infrastructure\\Service\\KeycloakService.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAewCMAAABlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T19:17:51.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Trabalho Puc\\customers-service\\customers-service\\appsettings.json",
+              "RelativeDocumentMoniker": "customers-service\\appsettings.json",
+              "ToolTip": "D:\\Trabalho Puc\\customers-service\\customers-service\\appsettings.json",
+              "RelativeToolTip": "customers-service\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-26T20:40:56.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Trabalho Puc\\customers-service\\customers-service\\Program.cs",
+              "RelativeDocumentMoniker": "customers-service\\Program.cs",
+              "ToolTip": "D:\\Trabalho Puc\\customers-service\\customers-service\\Program.cs",
+              "RelativeToolTip": "customers-service\\Program.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAAwD0AAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T18:40:10.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CustomerService.cs",
+              "DocumentMoniker": "D:\\Trabalho Puc\\customers-service\\customers-service\\Application\\Services\\CustomerService.cs",
+              "RelativeDocumentMoniker": "customers-service\\Application\\Services\\CustomerService.cs",
+              "ToolTip": "D:\\Trabalho Puc\\customers-service\\customers-service\\Application\\Services\\CustomerService.cs",
+              "RelativeToolTip": "customers-service\\Application\\Services\\CustomerService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T19:54:59.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "D:\\Trabalho Puc\\customers-service\\customers-service\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "customers-service\\Controllers\\CustomerController.cs",
+              "ToolTip": "D:\\Trabalho Puc\\customers-service\\customers-service\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "customers-service\\Controllers\\CustomerController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADcAAABeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T20:28:39.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IKeycloakService.cs",
+              "DocumentMoniker": "D:\\Trabalho Puc\\customers-service\\customers-service\\Domain\\Interfaces\\IKeycloakService.cs",
+              "RelativeDocumentMoniker": "customers-service\\Domain\\Interfaces\\IKeycloakService.cs",
+              "ToolTip": "D:\\Trabalho Puc\\customers-service\\customers-service\\Domain\\Interfaces\\IKeycloakService.cs",
+              "RelativeToolTip": "customers-service\\Domain\\Interfaces\\IKeycloakService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAYAAABZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T19:23:54.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CustomerRequestDTO.cs",
+              "DocumentMoniker": "D:\\Trabalho Puc\\customers-service\\customers-service\\Application\\DTO\\CustomerRequestDTO.cs",
+              "RelativeDocumentMoniker": "customers-service\\Application\\DTO\\CustomerRequestDTO.cs",
+              "ToolTip": "D:\\Trabalho Puc\\customers-service\\customers-service\\Application\\DTO\\CustomerRequestDTO.cs",
+              "RelativeToolTip": "customers-service\\Application\\DTO\\CustomerRequestDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T20:12:24.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ICustomerService.cs",
+              "DocumentMoniker": "D:\\Trabalho Puc\\customers-service\\customers-service\\Application\\Interfaces\\ICustomerService.cs",
+              "RelativeDocumentMoniker": "customers-service\\Application\\Interfaces\\ICustomerService.cs",
+              "ToolTip": "D:\\Trabalho Puc\\customers-service\\customers-service\\Application\\Interfaces\\ICustomerService.cs",
+              "RelativeToolTip": "customers-service\\Application\\Interfaces\\ICustomerService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAUAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T20:26:20.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "KeycloakUser.cs",
+              "DocumentMoniker": "D:\\Trabalho Puc\\customers-service\\customers-service\\Domain\\Entities\\KeycloakUser.cs",
+              "RelativeDocumentMoniker": "customers-service\\Domain\\Entities\\KeycloakUser.cs",
+              "ToolTip": "D:\\Trabalho Puc\\customers-service\\customers-service\\Domain\\Entities\\KeycloakUser.cs",
+              "RelativeToolTip": "customers-service\\Domain\\Entities\\KeycloakUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAACQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T19:48:44.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "D:\\Trabalho Puc\\customers-service\\customers-service\\Infrastructure\\Repository\\Repository.cs",
+              "RelativeDocumentMoniker": "customers-service\\Infrastructure\\Repository\\Repository.cs",
+              "ToolTip": "D:\\Trabalho Puc\\customers-service\\customers-service\\Infrastructure\\Repository\\Repository.cs",
+              "RelativeToolTip": "customers-service\\Infrastructure\\Repository\\Repository.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwCIAAABbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T18:44:29.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "KeycloakCredential.cs",
+              "DocumentMoniker": "D:\\Trabalho Puc\\customers-service\\customers-service\\Domain\\Entities\\KeycloakCredential.cs",
+              "RelativeDocumentMoniker": "customers-service\\Domain\\Entities\\KeycloakCredential.cs",
+              "ToolTip": "D:\\Trabalho Puc\\customers-service\\customers-service\\Domain\\Entities\\KeycloakCredential.cs",
+              "RelativeToolTip": "customers-service\\Domain\\Entities\\KeycloakCredential.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T19:49:44.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "D:\\Trabalho Puc\\customers-service\\customers-service\\Domain\\Entities\\Customer.cs",
+              "RelativeDocumentMoniker": "customers-service\\Domain\\Entities\\Customer.cs",
+              "ToolTip": "D:\\Trabalho Puc\\customers-service\\customers-service\\Domain\\Entities\\Customer.cs",
+              "RelativeToolTip": "customers-service\\Domain\\Entities\\Customer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T18:39:01.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CustomerRepository.cs",
+              "DocumentMoniker": "D:\\Trabalho Puc\\customers-service\\customers-service\\Infrastructure\\Repository\\CustomerRepository.cs",
+              "RelativeDocumentMoniker": "customers-service\\Infrastructure\\Repository\\CustomerRepository.cs",
+              "ToolTip": "D:\\Trabalho Puc\\customers-service\\customers-service\\Infrastructure\\Repository\\CustomerRepository.cs",
+              "RelativeToolTip": "customers-service\\Infrastructure\\Repository\\CustomerRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T19:59:44.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "D:\\Trabalho Puc\\customers-service\\customers-service\\Domain\\Interfaces\\IRepository.cs",
+              "RelativeDocumentMoniker": "customers-service\\Domain\\Interfaces\\IRepository.cs",
+              "ToolTip": "D:\\Trabalho Puc\\customers-service\\customers-service\\Domain\\Interfaces\\IRepository.cs",
+              "RelativeToolTip": "customers-service\\Domain\\Interfaces\\IRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T18:44:43.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ICustomerRepository.cs",
+              "DocumentMoniker": "D:\\Trabalho Puc\\customers-service\\customers-service\\Domain\\Interfaces\\ICustomerRepository.cs",
+              "RelativeDocumentMoniker": "customers-service\\Domain\\Interfaces\\ICustomerRepository.cs",
+              "ToolTip": "D:\\Trabalho Puc\\customers-service\\customers-service\\Domain\\Interfaces\\ICustomerRepository.cs",
+              "RelativeToolTip": "customers-service\\Domain\\Interfaces\\ICustomerRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T19:59:23.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DbContextPostgre.cs",
+              "DocumentMoniker": "D:\\Trabalho Puc\\customers-service\\customers-service\\Infrastructure\\DbContextCustomers\\DbContextPostgre.cs",
+              "RelativeDocumentMoniker": "customers-service\\Infrastructure\\DbContextCustomers\\DbContextPostgre.cs",
+              "ToolTip": "D:\\Trabalho Puc\\customers-service\\customers-service\\Infrastructure\\DbContextCustomers\\DbContextPostgre.cs",
+              "RelativeToolTip": "customers-service\\Infrastructure\\DbContextCustomers\\DbContextPostgre.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T18:39:51.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "KeycloakResponse.cs",
+              "DocumentMoniker": "D:\\Trabalho Puc\\customers-service\\customers-service\\Domain\\Entities\\KeycloakResponse.cs",
+              "RelativeDocumentMoniker": "customers-service\\Domain\\Entities\\KeycloakResponse.cs",
+              "ToolTip": "D:\\Trabalho Puc\\customers-service\\customers-service\\Domain\\Entities\\KeycloakResponse.cs",
+              "RelativeToolTip": "customers-service\\Domain\\Entities\\KeycloakResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T19:40:54.06Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

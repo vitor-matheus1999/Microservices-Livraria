@@ -56,7 +56,7 @@ services:
         KEYCLOAK_ADMIN_PASSWORD: admin
         KC_HTTP_ENABLED: "true"
       ports:
-        - "8080:8080"
+        - "9015:8080"
       networks:
         - arq-network
       volumes:
@@ -97,18 +97,23 @@ services:
         retries: 10
 
     ## Microservices
-    ms-user:
-      container_name: ms-user
-      image: ${DOCKER_REGISTRY-}ms-user
+    ms-customer:
+      container_name: ms-customer
+      image: ${DOCKER_REGISTRY-}ms-customer
       build:
-        context: ./identity-users
+        context: ./customer-service/customer-service
         dockerfile: Dockerfile
       ports: 
-        - "8081:8080"
+        - "9014:9014"
       depends_on:
         - db-user
       networks:
         - arq-network
+      # environment:
+      #   SPRING_PROFILES_ACTIVE: docker 
+      #   SPRING_DATASOURCE_URL: jdbc:postgresql://db-user:5432/usuario
+      #   SPRING_DATASOURCE_USERNAME: postgres
+      #   SPRING_DATASOURCE_PASSWORD: senha123 
     ms-payment:
       container_name: ms-payment
       image: ${DOCKER_REGISTRY-}ms-payment

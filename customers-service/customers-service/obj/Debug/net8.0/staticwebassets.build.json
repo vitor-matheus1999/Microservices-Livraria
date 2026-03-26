@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "9D4OZsUsvn+xgDoVAC4M0UN1hfN0SH/cRpbtlspbOkI=",
+  "Source": "customers-service",
+  "BasePath": "_content/customers-service",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

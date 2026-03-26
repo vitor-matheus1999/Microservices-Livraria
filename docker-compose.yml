@@ -104,11 +104,12 @@ services:
         context: ./customers-service/customers-service
         dockerfile: Dockerfile
       ports: 
-        - "9014:9014"
+        - "9014:8080"
       depends_on:
         - db-user
       networks:
         - arq-network
+
     ms-payment:
       container_name: ms-payment
       image: ${DOCKER_REGISTRY-}ms-payment

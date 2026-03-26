@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: identity-service
+  # 1. Banco de dados PostgreSQL
+  datasource:
+    url: jdbc:postgresql://user-postgres:5432/usuario
+    username: postgres
+    password: senha123
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  main:
+    allow-bean-definition-overriding: true
+    web-application-type: servlet
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8081/realms/master
+          jwk-set-uri: http://localhost:8081/realms/master/protocol/openid-connect/certs
+
+management:
+  otlp:
+    metrics:
+      export:
+        enabled: false
+  tracing:
+    sampling:
+      probability: 1.0
+    propagation:
+      type: w3c
+  opentelemetry:
+    tracing:
+      export:
+        otlp:
+          endpoint: http://localhost:4318/v1/traces
+
+logging:
+  include-application-name: false

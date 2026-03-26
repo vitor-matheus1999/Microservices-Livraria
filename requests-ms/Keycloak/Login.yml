@@ -1,0 +1,31 @@
+info:
+  name: Login
+  type: http
+  seq: 1
+
+http:
+  method: post
+  url: http://localhost:8080/realms/master/protocol/openid-connect/token
+  headers:
+    - name: Content-Type
+      value: application/x-www-form-urlencoded
+  body:
+    type: form-urlencoded
+    data:
+      - name: grant_type
+        value: password
+      - name: client_id
+        value: backend-api
+      - name: client_secret
+        value: MYe6IrjZYqBUTWGX56maplYNUg2xDOVb
+      - name: username
+        value: andre
+      - name: password
+        value: teste123
+  auth: inherit
+
+settings:
+  encodeUrl: false
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

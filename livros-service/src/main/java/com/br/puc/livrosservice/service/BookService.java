@@ -65,10 +65,6 @@ public class BookService {
     }
 
     public Book findBookById(long id) {
-        String json = usuarioClient.getUsuarios();
-
-        LOGGER.info("Testando Jaeger integração {}", json);
-
         return bookRepository.findById(id)
                 .orElse(null);
     }

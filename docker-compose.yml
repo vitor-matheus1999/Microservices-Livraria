@@ -56,7 +56,7 @@ services:
         KEYCLOAK_ADMIN_PASSWORD: admin
         KC_HTTP_ENABLED: "true"
       ports:
-        - "8081:8080"
+        - "8080:8080"
       networks:
         - arq-network
       volumes:
@@ -104,7 +104,7 @@ services:
         context: ./identity-users
         dockerfile: Dockerfile
       ports: 
-        - "9009:9009"
+        - "8081:8080"
       depends_on:
         - db-user
       networks:
@@ -179,7 +179,7 @@ services:
         context: ./livros-service
         dockerfile: Dockerfile
       ports: 
-        - "9013:9013"
+        - "8082:8080"
         - "5005:5005"
       environment:
       - SPRING_PROFILES_ACTIVE=docker

@@ -1,5 +1,5 @@
 # Dockerfile.dev
-FROM eclipse-temurin:21-jdk-alpine
+FROM eclipse-temurin:25-jdk-alpine
 
 WORKDIR /app
 
@@ -17,11 +17,12 @@ RUN chmod +x mvnw && ./mvnw dependency:go-offline -B
 COPY src ./src
 
 # Expor portas
-EXPOSE 9013 5005
+EXPOSE 8080 5005
 
-# Spring Boot dev tools com debug
 ENV JAVA_OPTS="\
     -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005 \
     -Dspring.devtools.restart.enabled=true"
 
-CMD ["./mvnw", "spring-boot:run", "-Dspring-boot.run.jvmArguments=\"$JAVA_OPTS\""]
+ENV SPRING_PROFILE=prod
+
+CMD ["sh", "-c", "./mvnw spring-boot:run -Dspring-boot.run.profiles=$SPRING_PROFILE -Dspring-boot.run.jvmArguments=\"$JAVA_OPTS\""]

@@ -101,7 +101,7 @@ services:
       container_name: ms-customer
       image: ${DOCKER_REGISTRY-}ms-customer
       build:
-        context: ./customer-service/customer-service
+        context: ./customers-service/customers-service
         dockerfile: Dockerfile
       ports: 
         - "9014:9014"

@@ -8,10 +8,9 @@ EXPOSE 9014
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["customers-service/customers-service.csproj", "customers-service/"]
-RUN dotnet restore "./customers-service/customers-service.csproj"
+COPY ["customers-service.csproj", "."]
+RUN dotnet restore "./customers-service.csproj"
 COPY . .
-WORKDIR "/src/customers-service"
 RUN dotnet build "./customers-service.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish

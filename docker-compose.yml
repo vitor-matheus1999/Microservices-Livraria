@@ -97,11 +97,11 @@ services:
         retries: 10
 
     ## Microservices
-    ms-customer:
-      container_name: ms-customer
-      image: ${DOCKER_REGISTRY-}ms-customer
+    ms-customers:
+      container_name: ms-customers
+      image: ${DOCKER_REGISTRY-}ms-customers
       build:
-        context: ./customer-service/customer-service
+        context: ./customers-service/customers-service
         dockerfile: Dockerfile
       ports: 
         - "9014:9014"
@@ -109,11 +109,6 @@ services:
         - db-user
       networks:
         - arq-network
-      # environment:
-      #   SPRING_PROFILES_ACTIVE: docker 
-      #   SPRING_DATASOURCE_URL: jdbc:postgresql://db-user:5432/usuario
-      #   SPRING_DATASOURCE_USERNAME: postgres
-      #   SPRING_DATASOURCE_PASSWORD: senha123 
     ms-payment:
       container_name: ms-payment
       image: ${DOCKER_REGISTRY-}ms-payment
@@ -174,7 +169,6 @@ services:
       networks:
         - arq-network
       restart: unless-stopped
-      pull_policy: always
     ms-livros:
       container_name: ms-livros
       image: ${DOCKER_REGISTRY-}ms-livros

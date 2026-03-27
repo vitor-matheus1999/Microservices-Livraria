@@ -22,19 +22,31 @@ export class OrdersEventsProducer implements OrderEventsPublisher, OnModuleInit,
       return;
     }
 
-    try {
-      this.connection = await connect(rabbitUrl);
-      this.channel = await this.connection.createChannel();
+    await this.tryConnectWithRetry(rabbitUrl);
+  }
 
-      const exchange = this.getExchange();
-      await this.channel.assertExchange(exchange, 'topic', { durable: true });
-
-      this.logger.log(`Conectado ao RabbitMQ. Exchange: ${exchange}`);
-    } catch (error) {
-      this.logger.error('Falha ao conectar no RabbitMQ. O fluxo HTTP continuara funcionando.', String(error));
-      this.connection = null;
-      this.channel = null;
+  private async tryConnectWithRetry(rabbitUrl: string, maxRetries = 10, delayMs = 5000): Promise<void> {
+    let attempt = 0;
+    while (attempt < maxRetries) {
+      try {
+        this.logger.log(`[RabbitMQ] Tentando conectar (tentativa ${attempt + 1}/${maxRetries})...`);
+        this.connection = await connect(rabbitUrl);
+        this.channel = await this.connection.createChannel();
+        const exchange = this.getExchange();
+        await this.channel.assertExchange(exchange, 'topic', { durable: true });
+        this.logger.log(`Conectado ao RabbitMQ. Exchange: ${exchange}`);
+        return;
+      } catch (error) {
+        this.logger.error(`[RabbitMQ] Falha ao conectar: ${String(error)}. Nova tentativa em ${delayMs / 1000}s.`);
+        this.connection = null;
+        this.channel = null;
+        attempt++;
+        if (attempt < maxRetries) {
+          await new Promise((resolve) => setTimeout(resolve, delayMs));
+        }
+      }
     }
+    this.logger.error(`[RabbitMQ] Não foi possível conectar após ${maxRetries} tentativas. Eventos não serão publicados.`);
   }
 
   async onModuleDestroy(): Promise<void> {

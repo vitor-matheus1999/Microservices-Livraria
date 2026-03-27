@@ -97,23 +97,19 @@ services:
         retries: 10
 
     ## Microservices
-    ms-customer:
-      container_name: ms-customer
-      image: ${DOCKER_REGISTRY-}ms-customer
+    ms-customers:
+      container_name: ms-customers
+      image: ${DOCKER_REGISTRY-}ms-customers
       build:
         context: ./customers-service/customers-service
         dockerfile: Dockerfile
       ports: 
-        - "9014:9014"
+        - "9014:8080"
       depends_on:
         - db-user
       networks:
         - arq-network
-      # environment:
-      #   SPRING_PROFILES_ACTIVE: docker 
-      #   SPRING_DATASOURCE_URL: jdbc:postgresql://db-user:5432/usuario
-      #   SPRING_DATASOURCE_USERNAME: postgres
-      #   SPRING_DATASOURCE_PASSWORD: senha123 
+
     ms-payment:
       container_name: ms-payment
       image: ${DOCKER_REGISTRY-}ms-payment
@@ -169,12 +165,14 @@ services:
         DB_USERNAME: ${DB_USERNAME:-postgres}
         DB_PASSWORD: ${DB_PASSWORD:-senha123}
         DB_DATABASE: ${DB_DATABASE:-ms_pedidos}
+        RABBITMQ_URL: amqp://guest:guest@rabbitmq:5672
+        RABBITMQ_EXCHANGE: orders.exchange
+        RABBITMQ_ROUTING_KEY: order.created
       depends_on:
         - db-pedidos
       networks:
         - arq-network
       restart: unless-stopped
-      pull_policy: always
     ms-livros:
       container_name: ms-livros
       image: ${DOCKER_REGISTRY-}ms-livros
@@ -186,18 +184,6 @@ services:
       ports: 
         - "8082:8080"
         - "5005:5005"
-      environment:
-      - SPRING_PROFILES_ACTIVE=docker
-      - DB_HOST=db-livros
-      - DB_PORT=5432
-      - DB_NAME=books-service
-      - DB_USERNAME=postgres
-      - DB_PASSWORD=postgres@local
-      - RABBITMQ_HOST=rabbitmq
-      - RABBITMQ_PORT=5672
-      - RABBITMQ_USERNAME=guest
-      - RABBITMQ_PASSWORD=guest
-      - JAVA_OPTS=-XX:+UseContainerSupport -XX:MaxRAMPercentage=75.0
       networks:
         - arq-network
 

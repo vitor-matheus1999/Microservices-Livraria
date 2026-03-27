@@ -28,7 +28,7 @@ namespace customers_service
 
             builder.Services.AddHttpClient("Keycloak", client =>
             {
-                client.BaseAddress = new Uri("http://keycloak-service");
+                client.BaseAddress = new Uri("http://keycloak-service:8080");
                 client.Timeout = TimeSpan.FromSeconds(10);
             });
 

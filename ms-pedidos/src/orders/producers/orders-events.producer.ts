@@ -15,7 +15,7 @@ export class OrdersEventsProducer implements OrderEventsPublisher, OnModuleInit,
   constructor(private readonly configService: ConfigService) {}
 
   async onModuleInit(): Promise<void> {
-    const rabbitUrl = this.configService.get<string>('rabbitmq.url');
+    const rabbitUrl = this.configService.get<string>('RABBITMQ_URL');
 
     if (!rabbitUrl) {
       this.logger.warn('RabbitMQ URL nao configurada. Eventos nao serao publicados.');
@@ -87,10 +87,10 @@ export class OrdersEventsProducer implements OrderEventsPublisher, OnModuleInit,
   }
 
   private getExchange(): string {
-    return this.configService.get<string>('rabbitmq.exchange') ?? 'orders.exchange';
+    return this.configService.get<string>('RABBITMQ_EXCHANGE') ?? 'orders.exchange';
   }
 
   private getRoutingKey(): string {
-    return this.configService.get<string>('rabbitmq.routingKey') ?? 'order.created';
+    return this.configService.get<string>('RABBITMQ_ROUTING_KEY') ?? 'order.created';
   }
 }

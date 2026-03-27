@@ -4,25 +4,34 @@ import pika
 from pika.spec import Basic, BasicProperties
 
 from config.rabbitmq import ORDER_CREATED_QUEUE, RABBITMQ_EXCHANGE
+from models.order_created_event import OrderCreatedEvent
 from producer.payment_publisher import publish_payment_result
 from services.payment_processor import process_payment
 from utils.logger import get_logger
 
 logger = get_logger("consumer.order_consumer")
 
-REQUIRED_FIELDS = {"orderId", "customerEmail", "amount"}
-
 
 def _parse_body(body: bytes) -> dict | None:
     try:
-        return json.loads(body)
-    except json.JSONDecodeError as exc:
-        logger.error(f"Invalid JSON — discarding message: {exc}")
+        raw = json.loads(body)
+        event = OrderCreatedEvent.from_dict(raw)
+        return {
+            "orderId": event.data.orderId,
+            "customerName": event.data.customerName,
+            "amount": event.data.amount,
+            "status": event.data.status,
+            "paymentToken": event.data.paymentToken,
+            "items": [vars(i) for i in event.data.items],
+        }
+    except (json.JSONDecodeError, KeyError) as exc:
+        logger.error(f"Invalid message — discarding: {exc}")
         return None
 
 
 def _validate_order(order: dict) -> bool:
-    missing = REQUIRED_FIELDS - order.keys()
+    required = {"orderId", "amount"}
+    missing = required - order.keys()
     if missing:
         logger.error(f"Missing fields {missing} — discarding message")
         return False

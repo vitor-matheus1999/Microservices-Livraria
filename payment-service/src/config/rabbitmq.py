@@ -10,7 +10,7 @@ load_dotenv()
 
 logger = get_logger("config.rabbitmq")
 
-RABBITMQ_URL = os.getenv("RABBITMQ_URL", "amqp://guest:guest@rabbitmq:5672")
+RABBITMQ_URL = os.getenv("RABBITMQ_URL", "amqp://guest:guest@localhost:5672")
 RABBITMQ_EXCHANGE = os.getenv("RABBITMQ_EXCHANGE", "orders.exchange")
 RABBITMQ_ROUTING_KEY = os.getenv("RABBITMQ_ROUTING_KEY", "order.created")
 
